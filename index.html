@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heal2Rise   - Support, Heal, Rise Again</title>
+    <meta name="description" content="Heal2Rise   - A confidential platform connecting individuals facing depression and family issues with NGOs for counseling and rehabilitation support.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        /* Additional inline styles for immediate visual impact */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(74, 144, 164, 0.95) 0%, rgba(58, 122, 140, 0.95) 100%),
+                        url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1920') center/cover no-repeat;
+        }
+        .founder-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .founder-img {
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .social-icon:hover {
+            transform: translateY(-5px);
+            color: white;
+        }
+        .social-facebook  { background: #1877f2; }
+        .social-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .social-linkedin { background: #0077b5; }
+        .social-tiktok { background: #000000; }
+        .social-x { background: #000000; }
+        .hopeaid-logo {
+            max-width: 120px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/hopeaid-logo.jpeg" alt="HopeAid" class="hopeaid-logo me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                Heal2Rise
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ngos">Our NGOs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#founder">Founder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="pages/login.html">Login</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-outline" href="pages/register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content fade-in">
+                        <h1 class="hero-title">
+                            Support, <span>Heal</span>, Rise Again
+                        </h1>
+                        <p class="hero-subtitle">
+                            A confidential platform connecting individuals facing depression, hopelessness, 
+                            or family issues with compassionate NGOs. Your journey to healing starts here.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="pages/register.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-user-plus me-2"></i>Get Support Now
+                            </a>
+                            <a href="pages/ngo-register.html" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-building me-2"></i>Register as NGO
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-white-50 mb-2">
+                                <i class="fas fa-shield-alt me-2"></i>100% Confidential & Private
+                            </p>
+                            <p class="text-white-50">
+                                <i class="fas fa-check-circle me-2"></i>Trusted by 50+ NGOs across Pakistan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-image text-center">
+                        <img src="assets/images/founder-social.png" 
+                             alt="Muhammad Waqas - Founder" 
+                             class="img-fluid rounded-lg shadow-xl"
+                             style="max-height: 500px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="2500">0</div>
+                        <div class="stat-label">Lives Transformed</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Partner NGOs</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="12000">0</div>
+                        <div class="stat-label">Counseling Sessions</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">% Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive support system designed for your healing journey</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Confidential Registration</h3>
+                        <p>Your privacy is our priority. Register anonymously with complete data protection and secure verification process.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>NGO Connection</h3>
+                        <p>Get matched with the most suitable NGO based on your specific needs and location for personalized support.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Online Counseling</h3>
+                        <p>Access professional counseling sessions via video calls with certified psychiatrists and counselors.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Progress Tracking</h3>
+                        <p>Monitor your healing journey with regular assessments and track your skill development progress.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Skill Development</h3>
+                        <p>Learn new skills through our partner NGOs to build confidence and prepare for a better future.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Rehabilitation Support</h3>
+                        <p>For those who need intensive care, access residential rehabilitation facilities until full recovery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="about">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Your journey to healing in four simple steps</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Register</h3>
+                        <p>Create your confidential account and share your concerns securely with our system.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Get Matched</h3>
+                        <p>Our system connects you with the most suitable NGO and assigns a dedicated support team member.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Receive Support</h3>
+                        <p>Attend counseling sessions, develop skills, and work towards healing with continuous monitoring.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Rise Again</h3>
+                        <p>Once empowered and confident, your case is formally closed with ongoing community support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NGOs Section -->
+    <section class="ngos-section" id="ngos">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Partner NGOs</h2>
+                <p class="section-subtitle">Trusted organizations dedicated to your well-being</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="ngo-card">
+                        <div class="ngo-image">
+                            <img src="assets/images/hopeaid-logo.jpeg" alt="HopeAid" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
+                        </div>
+                        <div class="ngo-content">
+                            <h3>HopeAid</h3>
+                            <p><i class="fas fa-map-marker-alt me-2 text-primary"></i>Karachi, Pakistan</p>
+                            <p class="mt-2">Dedicated to mental health support and rehabilitation services for individuals in need.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Counseling</span>
+                                <span class="badge bg-success">Rehabilitation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="ngo-card">
+                        <div class="ngo-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-hands-holding-child"></i>
+                        </div>
+                        <div class="ngo-content">
+                            <h3>Care & Cure NGO</h3>
+                            <p><i class="fas fa-map-marker-alt me-2 text-primary"></i>Karachi, Pakistan</p>
+                            <p class="mt-2">Providing support for individuals facing family and marital issues with professional care.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-info me-2">Family Counseling</span>
+                                <span class="badge bg-warning">Legal Aid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="ngo-card">
+                        <div class="ngo-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="ngo-content">
+                            <h3>New Beginnings</h3>
+                            <p><i class="fas fa-map-marker-alt me-2 text-primary"></i>Lahore, Pakistan</p>
+                            <p class="mt-2">Empowering individuals through skill development and vocational training programs.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Skills Training</span>
+                                <span class="badge bg-success">Employment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="pages/ngos.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-building me-2"></i>View All NGOs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section py-5" id="founder">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Meet Our Founder</h2>
+                <p class="section-subtitle">The visionary behind Heal2Rise  </p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="position-relative">
+                        <img src="assets/images/founder-speech.jpg" 
+                             alt="Muhammad Waqas - Founder" 
+                             class="img-fluid founder-img">
+                        <div class="position-absolute bottom-0 start-0 bg-primary text-white px-4 py-2 rounded-end" style="transform: translateY(50%);">
+                            <h5 class="mb-0">Muhammad Waqas</h5>
+                            <small>Founder & CEO</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3">Muhammad Waqas</h3>
+                    <p class="text-primary fw-bold mb-4">Founder & CEO, Heal2Rise  </p>
+                    <p class="lead">
+                        "I worked so hard to earn my reward, but before I could even hold it in my hands, 
+                        my hands were cut off. This experience taught me the importance of mental resilience 
+                        and the need for support systems in our society."
+                    </p>
+                    <p>
+                        Muhammad Waqas is a passionate advocate for mental health awareness and social welfare. 
+                        With a vision to create a platform that bridges the gap between those in need and organizations 
+                        that can help, he founded Heal2Rise   to provide confidential support to individuals 
+                        facing depression, family issues, and hopelessness.
+                    </p>
+                    <p>
+                        Through HopeAid and Heal2Rise  , Muhammad aims to transform lives by connecting 
+                        people with compassionate NGOs, professional counselors, and skill development opportunities.
+                    </p>
+                    <div class="mt-4">
+                        <h5 class="mb-3">Connect with Muhammad:</h5>
+                        <a href="https://facebook.com/iWaqaz" target="_blank" class="social-icon social-facebook" title="Facebook">
+                            <i class="fab fa-facebook -f"></i>
+                        </a>
+                        <a href="https://instagram.com/i_waqaz" target="_blank" class="social-icon social-instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/muhammad-waqas-6859a4177" target="_blank" class="social-icon social-linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://tiktok.com/@iwaqaz" target="_blank" class="social-icon social-tiktok" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://x.com/Waqas_world" target="_blank" class="social-icon social-x" title="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-white">Success Stories</h2>
+                <p class="section-subtitle text-white-50">Hear from those who have transformed their lives</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Heal2Rise   connected me with an amazing NGO that helped me overcome my depression. 
+                            The counseling sessions changed my life. I'm forever grateful."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">A</div>
+                            <div>
+                                <h5 class="mb-0">Anonymous</h5>
+                                <small class="text-muted">Depression Recovery</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "After my divorce, I felt hopeless. This platform gave me the support I needed 
+                            to rebuild my life. The team was incredibly supportive throughout my journey."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">S</div>
+                            <div>
+                                <h5 class="mb-0">Anonymous</h5>
+                                <small class="text-muted">Family Issues Support</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "The skill development program helped me gain confidence and find employment. 
+                            Today, I'm independent and living a fulfilling life thanks to Heal2Rise."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">M</div>
+                            <div>
+                                <h5 class="mb-0">Anonymous</h5>
+                                <small class="text-muted">Skills Graduate</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Start Your Healing Journey?</h2>
+            <p class="cta-text">Take the first step towards a better tomorrow. Register now and let us connect you with the support you need.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="pages/register.html" class="btn btn-light btn-lg">
+                    <i class="fas fa-user-plus me-2"></i>Register as User
+                </a>
+                <a href="pages/donate.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-donate me-2"></i>Make a Donation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="mb-4">Have questions? We're here to help. Reach out to us through any of the following channels.</p>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        <div class="ms-3">
+                            <h5>Email</h5>
+                            <p class="mb-0">bc220207915mwa@vu.edu.pk</p>
+                            <p class="mb-0 text-muted">mh1481899@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+                        <div class="ms-3">
+                            <h5>Phone</h5>
+                            <p class="mb-0">+92 306 2725746</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                        </div>
+                        <div class="ms-3">
+                            <h5>Location</h5>
+                            <p class="mb-0">Muzaffarabad Colony, Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Send us a Message</h4>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="4" placeholder="How can we help you?" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="assets/images/hopeaid-logo.jpeg" alt="HopeAid" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                        Heal2Rise
+                    </div>
+                    <p class="footer-about">
+                        Heal2Rise   is a confidential platform dedicated to supporting individuals 
+                        facing depression, hopelessness, and family issues. We connect you with trusted 
+                        NGOs for counseling, rehabilitation, and skill development.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/iWaqaz" target="_blank" title="Facebook"><i class="fab fa-facebook -f"></i></a>
+                        <a href="https://instagram.com/i_waqaz" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/muhammad-waqas-6859a4177" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://tiktok.com/@iwaqaz" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://x.com/Waqas_world" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#ngos">Our NGOs</a></li>
+                        <li><a href="#founder">Founder</a></li>
+                        <li><a href="pages/donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Counseling</a></li>
+                        <li><a href="#">Rehabilitation</a></li>
+                        <li><a href="#">Skill Training</a></li>
+                        <li><a href="#">Progress Tracking</a></li>
+                        <li><a href="#">NGO Connection</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>bc220207915mwa@vu.edu.pk</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>mh1481899@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+92 306 2725746</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Muzaffarabad Colony, Karachi, Pakistan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">
+                    &copy; 2025 Heal2Rise  . All Rights Reserved. | 
+                    <a href="#" class="text-white-50">Privacy Policy</a> | 
+                    <a href="#" class="text-white-50">Terms of Service</a>
+                </p>
+                <p class="mt-2 mb-0 text-white-50">
+                    <small>Founded by Muhammad Waqas | CS619 Project - Virtual University of Pakistan</small>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Counter animation
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(animateCounters, 20);
+                } else {
+                    counter.innerText = target.toLocaleString() + '+';
+                }
+            });
+        };
+
+        // Trigger counter animation when in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.disconnect();
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Contact form handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
