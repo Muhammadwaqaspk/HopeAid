@@ -1,4 +1,4 @@
-# Heal2Rise  - Social Welfare Management System
+# Heal2Rise Social Welfare Management System
 
 ## Project Overview
 
