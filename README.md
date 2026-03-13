@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Heal2Rise ** is a web-based platform designed to support individuals facing depression, hopelessness, or family/marital issues. The system ensures complete confidentiality and privacy for every user while connecting them with suitable NGOs for counseling, monitoring, and skill development opportunities.
+**Heal2Rise ** is a web-based platform designed to support individuals facing depression, hopelessness, or family/marital issues. The system ensures complete confidentiality and privacy for every user while connecting them with suitable NGOs for counseling, monitoring and skill development opportunities.
 
 ## Features
 
